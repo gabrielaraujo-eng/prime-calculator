@@ -1,36 +1,30 @@
-# Calculadora de Números Primos - Fórmula de Willans
+# Calculadora de Números Primos
 
-Este projeto implementa a Fórmula de Willans para calcular o n-ésimo número primo, juntamente com o Polinômio de Euler para gerar números que são frequentemente primos.
+Projeto educacional que explora a Fórmula de Willans para calcular o n-ésimo primo e o Polinômio de Euler como gerador de números frequentemente primos.
 
-## O que é a Fórmula de Willans?
-A Fórmula de Willans é uma fórmula matemática que, teoricamente, pode gerar todos os números primos. Ela é expressa como:
+## Arquivos
 
+- `willans_formula.py`: implementação demonstrativa da Fórmula de Willans.
+- `euler_polynomial.py`: experimento com o Polinômio de Euler.
+- `index.html`: página de apresentação para o GitHub Pages.
+
+## Executar localmente
+
+```bash
+git clone https://github.com/gabrielaraujo-eng/prime-calculator.git
+cd prime-calculator
+python3 willans_formula.py
+python3 euler_polynomial.py
 ```
-P_n = 1 + \sum_{m=1}^{2^n} \left\lfloor \left( \frac{n}{\sum_{j=1}^{m} \left\lfloor \left( \cos \left( \frac{(j-1)! + 1}{j} \pi \right) \right)^2 \right\rfloor} \right)^{1/n} \right\rfloor
-```
 
-No entanto, a implementação prática desta fórmula é extremamente ineficiente devido ao cálculo de fatoriais muito grandes e somatórios extensos, tornando-a mais uma curiosidade teórica do que um método computacionalmente viável para encontrar números primos grandes.
+A Fórmula de Willans cresce rapidamente em custo computacional. O projeto é voltado ao estudo da ideia matemática, não ao cálculo eficiente de primos grandes.
 
-## Como rodar o projeto
+## GitHub Pages
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone https://github.com/gabrielaraujo-eng/prime-calculator.git
-    cd prime-calculator
-    ```
+O workflow em `.github/workflows/pages.yml` publica a página de apresentação. Para ativar a publicação pela primeira vez, abra **Settings → Pages** no repositório e selecione **GitHub Actions** como fonte.
 
-2.  **Execute os scripts Python:**
-    ```bash
-    python3 willans_formula.py
-    python3 euler_polynomial.py
-    ```
+URL esperada: <https://gabrielaraujo-eng.github.io/prime-calculator/>
 
-## Aviso sobre o tempo de execução
-A Fórmula de Willans, como implementada em `willans_formula.py`, possui um **crescimento exponencial no tempo de execução**. Calcular números primos maiores que os primeiros 10-15 pode levar um tempo proibitivo, mesmo para máquinas potentes. Este script é para fins educacionais e demonstrativos da complexidade da fórmula.
+## Créditos
 
-
-## Publicação
-
-Este repositório é publicado automaticamente no GitHub Pages:
-
-https://gabrielaraujo-eng.github.io/prime-calculator/
+Desenvolvido por Gabriel Lúcio de Araújo.
