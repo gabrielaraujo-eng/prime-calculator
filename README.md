@@ -28,3 +28,6 @@ URL esperada: <https://gabrielaraujo-eng.github.io/prime-calculator/>
 ## Créditos
 
 Desenvolvido por Gabriel Lúcio de Araújo.
+
+## Metadados e compartilhamento
+A página publicada em `index.html` define título e descrição em português, URL canônica do GitHub Pages, Open Graph, Twitter Card e o favicon vetorial `favicon.svg`. A imagem social reutiliza `og-share.png`; ao substituí-la, atualize também os metadados de dimensão e texto alternativo para refletir o arquivo real. Mantenha a URL canônica sincronizada com a configuração de publicação e o `sitemap.xml`.
